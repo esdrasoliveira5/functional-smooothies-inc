@@ -26,8 +26,8 @@ class IngredientsApplicationTests {
 
   @Test
   @Order(1)
-  @DisplayName("1 - Correto")
-  void deveAdicionarDrone() throws Exception {
+  @DisplayName("1 - Display the correct list os ingredients")
+  void shouldBeReturnIngredients() throws Exception {
     final var smoothie = new SmoothieDto("Classic,-strawberry,-peanut");
     mockMvc
         .perform(post("/ingredients/create").contentType(MediaType.APPLICATION_JSON)
@@ -36,4 +36,14 @@ class IngredientsApplicationTests {
         .andExpect(jsonPath("$.ingredient").value("banana,pineapple,mango,peach,honey"));
   }
 
+  @Test
+  @Order(2)
+  @DisplayName("2 - Display the correct error message and status when input is empty")
+  void shouldBeReturnErrorEmpty() throws Exception {
+    final var smoothie = new SmoothieDto("");
+    mockMvc
+        .perform(post("/ingredients/create").contentType(MediaType.APPLICATION_JSON)
+            .content(new ObjectMapper().writeValueAsString(smoothie)))
+        .andExpect(status().isBadRequest()).andExpect(jsonPath("$.error").value("Empty Input"));
+  }
 }
