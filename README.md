@@ -8,9 +8,10 @@
   - [Instruções para iniciar o projeto](#Intruções-para-iniciar-o-projeto)
 - [Documentação](#Documentação)
   - [Tipos de Smoothies](#Tipos-de-Smoothies)
-  - [Listar Ingredients](#Listar-Ingredients)
+  - [Listar Ingredientes](#Listar-Ingredientes)
+  - [Remover ingredientes especificos](#Remover-ingredientes-especificos)
 
-
+Remover ingredientes especificos
 <br>
 
 ## Descrição
