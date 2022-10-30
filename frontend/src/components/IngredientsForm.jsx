@@ -6,7 +6,7 @@ import FormStyled from '../styles/FormStyles';
 
 
 function IngredientForm() {
-    const [ingredients, setIngredients] = useState('')
+    const [ingredients, setIngredients] = useState(null)
     const [data, setdata] = useState({
         ingredient: '',
     })
@@ -36,7 +36,17 @@ function IngredientForm() {
     return (
         <div>
         <FormStyled onSubmit={handleSubmit}>
-                    <h3>Ingredients</h3>
+                    <h1>Select the Smoothie</h1>
+                    <h3>Menu</h3>
+                        <li>Classic: strawberry, banana, pineapple, mango, peach, honey</li>
+                        <li>Freezie: blackberry, blueberry, black currant, grape juice, frozen yogurt</li>
+                        <li>Greenie: green apple, lime, avocado, spinach, ice, apple juice</li>
+                        <li>Just Desserts: banana, ice cream, chocolate, peanut, cherry</li>
+                    <h3>Instructions</h3>
+                    <p>Enter the name of the Selected Smoothie followed by the ingredients to be removed separated by a comma.</p>
+                    <p> The ingredient must be preceded by the symbol "-".</p>
+                    <p ><b> Ex: Classic,-strawberry,-banana</b></p>
+                    <p></p>
                     <label htmlFor="latitude">
                         <input
                             type="text"
@@ -55,9 +65,12 @@ function IngredientForm() {
                         </button>
                     </ButtonGreen>
         </FormStyled>
-        <BoxStyled>
-            <p>{ingredients}</p>
-        </BoxStyled>
+        { ingredients == null ? "" :         
+            <BoxStyled>
+                <h3>Ingredients List</h3>
+                <p>{ingredients}</p>
+            </BoxStyled>
+        }
         </div>
     );
 }

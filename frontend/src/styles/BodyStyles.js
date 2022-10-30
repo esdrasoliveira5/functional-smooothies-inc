@@ -10,6 +10,7 @@ const BodyStyled = styled.div`
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url(${img});
+  padding: 80px;
   `;
 
 export default BodyStyled;
