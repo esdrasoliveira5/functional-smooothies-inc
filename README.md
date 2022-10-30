@@ -14,12 +14,13 @@
 
 ## Descrição
 
-**Objetivo**: Neste projeto foi desenvolvido uma aplicação completa com frontend em javascript e React.js, um backend em Java e SpringBoot. Essa aplicação simula um site de pedidos de Smoothies.
+**Objetivo**: Neste projeto foi desenvolvido uma aplicação completa com front-end em javascript e React.js, um back-end em Java e SpringBoot. Essa aplicação simula uma interface de listagem de ingredientes de Smoothies.
 
 - React.js;
 - Arquitetura REST;
 - Conseitos de SOLID e POO;
 - Java 11 e Javascript;
+- Testes com JUnit;
 - Docker;
 
 ## Pré-requisitos
