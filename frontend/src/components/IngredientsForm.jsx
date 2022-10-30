@@ -43,7 +43,7 @@ function IngredientForm() {
                         <li>Greenie: green apple, lime, avocado, spinach, ice, apple juice</li>
                         <li>Just Desserts: banana, ice cream, chocolate, peanut, cherry</li>
                     <h3>Instructions</h3>
-                    <p>Enter the name of the Selected Smoothie followed by the ingredients to be removed separated by a comma.</p>
+                    <p>Enter the name of the Selected Smoothie followed by the ingredients to be removed separated by comma.</p>
                     <p> The ingredient must be preceded by the symbol "-".</p>
                     <p ><b> Ex: Classic,-strawberry,-banana</b></p>
                     <p></p>
