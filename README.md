@@ -49,13 +49,13 @@
   sudo docker-compose up
 
 
-- Acesse a aplicacao web pela rota
+- Acesse a aplicação web front-end pela rota
 
   ```sh
   http://localhost:5173/
 
 
-- Acesse o backend pela rota
+- Acesse a aplicação Java Spring-Boot back-end pela rota
 
   ```sh
   http://localhost:8080/
@@ -69,7 +69,7 @@
 
 <br/>
 
-### **Listar Ingredients** 
+### **Listar Ingredientes** 
 ##### `POST` /ingredients/create
   <br/>
 
@@ -90,11 +90,11 @@
     ```
   <br/>
 
-### **Listar Ingredients sem ingredient especifico** 
+### **Remover ingredientes especificos** 
 ##### `POST` /ingredients/create
   <br/>
 
-  Esse endpoint retorna uma lista de ingredientes.
+  Esse endpoint retorna uma lista com exceção do ingrediente especificado.
 
   - Exemplo `request body` 
     ``` json
