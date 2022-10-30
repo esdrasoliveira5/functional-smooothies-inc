@@ -5,7 +5,7 @@ const FooterStyled = styled.footer`
   padding: 20px;
   color: #023047;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 80px;
   position: absolute;
@@ -15,15 +15,16 @@ const FooterStyled = styled.footer`
   z-index: 10;
   div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
     a {
       text-decoration: none;
       img {
+        padding: 10px;
         width: 30px;
       }
     }
   }
+
 `;
 
 export default FooterStyled;
