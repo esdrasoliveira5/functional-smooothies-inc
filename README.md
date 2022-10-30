@@ -68,6 +68,15 @@
 
 ## Documentação
 
+ <br/>
+
+### **Tipos de Smoothies**
+
+<li>Classic: strawberry, banana, pineapple, mango, peach, honey</li>
+<li>Freezie: blackberry, blueberry, black currant, grape juice, frozen yogurt</li>
+<li>Greenie: green apple, lime, avocado, spinach, ice, apple juice</li>
+<li>Just Desserts: banana, ice cream, chocolate, peanut, cherry</li>
+
 <br/>
 
 ### **Listar Ingredientes** 
@@ -111,3 +120,5 @@
       }
     ```
   <br/>
+
+<br/>
