@@ -7,6 +7,7 @@
   - [Instalação](#Instalação)
   - [Instruções para iniciar o projeto](#Intruções-para-iniciar-o-projeto)
 - [Documentação](#Documentação)
+  - [Tipos de Smoothies](#Tipos-de-Smoothies)
   - [Listar Ingredients](#Listar-Ingredients)
 
 
