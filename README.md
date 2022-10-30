@@ -48,6 +48,19 @@
   ```sh
   sudo docker-compose up
 
+
+- Acesse a aplicacao web pela rota
+
+  ```sh
+  http://localhost:5173/
+
+
+- Acesse o backend pela rota
+
+  ```sh
+  http://localhost:8080/
+
+
 <br/>
 
 <img src="./assets/image.png">
