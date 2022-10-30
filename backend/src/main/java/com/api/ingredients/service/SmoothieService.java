@@ -61,7 +61,7 @@ public class SmoothieService {
         ingredients.stream().filter(i -> !i.trim().startsWith("-")).collect(Collectors.toList());
 
     if (!palavra.isEmpty()) {
-      throw new IllegalArgumentException("Aditional Ingredient Detected");
+      throw new IllegalArgumentException("Aditional Ingredient Not Supported");
     }
     return smoothie.ingredientList(ingredients);
   }

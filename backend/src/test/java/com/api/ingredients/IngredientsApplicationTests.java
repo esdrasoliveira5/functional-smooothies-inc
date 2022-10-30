@@ -69,7 +69,7 @@ class IngredientsApplicationTests {
         .perform(post("/ingredients/create").contentType(MediaType.APPLICATION_JSON)
             .content(new ObjectMapper().writeValueAsString(smoothie)))
         .andExpect(status().isBadRequest())
-        .andExpect(jsonPath("$.error").value("Aditional Ingredient Detected"));
+        .andExpect(jsonPath("$.error").value("Aditional Ingredient Not Supported"));
   }
 
 
