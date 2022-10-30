@@ -20,7 +20,6 @@ function IngredientForm() {
     };
 
     const submitForm = async () => {
-        console.log(data)
         const response = await requests.createOrder(data)
         if(response.error) {
             window.alert(response.error)
@@ -28,10 +27,15 @@ function IngredientForm() {
             setIngredients(response.ingredient)
         }
     };
-    
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        submitForm()
+      };
+
     return (
         <div>
-        <FormStyled>
+        <FormStyled onSubmit={handleSubmit}>
                     <h3>Ingredients</h3>
                     <label htmlFor="latitude">
                         <input
@@ -50,10 +54,10 @@ function IngredientForm() {
                             Submit
                         </button>
                     </ButtonGreen>
-                </FormStyled>
-                <BoxStyled>
-                    <p>{ingredients}</p>
-                </BoxStyled>
+        </FormStyled>
+        <BoxStyled>
+            <p>{ingredients}</p>
+        </BoxStyled>
         </div>
     );
 }
