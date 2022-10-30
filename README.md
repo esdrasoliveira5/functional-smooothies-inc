@@ -50,7 +50,7 @@
 
 <br/>
 
-<img src="./assets/image.png>
+<img src="./assets/image.png">
 
 ## Documentação
 
