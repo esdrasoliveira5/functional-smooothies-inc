@@ -11,7 +11,6 @@
   - [Listar Ingredientes](#Listar-Ingredientes)
   - [Remover ingredientes especificos](#Remover-ingredientes-especificos)
 
-Remover ingredientes especificos
 <br>
 
 ## Descrição
