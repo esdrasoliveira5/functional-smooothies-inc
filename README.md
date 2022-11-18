@@ -20,8 +20,10 @@
 
 - Arquitetura REST;
 - Conseitos de SOLID e POO;
-- Java;
+- Java 11;
+- Maven;
 - Javascript;
+- Node.js;
 - React.js;
 - Testes com JUnit;
 - Docker;
@@ -31,6 +33,7 @@
 - `npm version 6.14.13`
 - `node version 14.17.0`
 - `openjdk 11.0.16`
+- `Apache Maven 3.6.3`
 - `docker version 20.10.13`
 - `docker-compose version 1.29.2`
 
